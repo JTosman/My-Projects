@@ -1,0 +1,35 @@
+.global-fieldset input {
+	margin: 20px;
+}
+
+.gender-fieldset {
+	width: 100px;
+}
+
+.gender-fieldset input {
+	margin: 0px;
+}
+
+.gender-fieldset label {
+	margin-right: 10px;
+}
+
+.global-fieldset .note {
+	width: 40px;
+}
+
+.reg-section-1 {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+.reg-title td {
+	border: 2px solid black;
+	padding: 5px;
+}
+
+.reg-info td {
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}

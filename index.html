@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRUD de estudiantes</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<form>
+		<fieldset class="global-fieldset">
+			<label for="std-name">Nombre</label>
+			<input type="text" name="std-name" id="std-name">
+			<br>
+			<label for="std-last-name">Apellido</label>
+			<input type="text" name="std-last-name" id="std-last-name">
+			<br>
+			<label for="std-bird-date">Fecha de nacimiento</label>
+			<input type="date" name="std-bird-date" id="std-bird-date">
+			<br>
+			<label for="std-grade">Grado</label>
+			<select name="std-grade" id="std-grade">
+				<option selected></option>
+				<option>1 Año</option>
+				<option>2 Año</option>
+				<option>3 Año</option>
+				<option>4 Año</option>
+				<option>5 Año</option>
+				<option>1 Semestre</option>
+				<option>2 Semestre</option>
+				<option>3 Semestre</option>
+				<option>4 Semestre</option>
+				<option>5 Semestre</option>
+				<option>6 Semestre</option>
+				<option>7 Semestre</option>
+				<option>8 Semestre</option>
+				<option>9 Semestre</option>
+			</select>
+			<br>
+			<br>
+			<label for="std-sex">Sexo</label>
+			<select name="std-sex" id="std-sex">
+				<option selected></option>
+				<option>Masculino</option>
+				<option>Femenino</option>
+			</select>
+			<br>
+			<label for="std-matters">Materias</label>
+			<input type="text" name="std-matters" id="std-matters" onkeypress="return valideKey(event);" onclick="Setmatters()" onblur="Setmatters()">
+			<div id="error-matters"></div>
+			<br>
+			<div id="matters-section"></div>
+			<br>
+			<input type="button" name="save" id="save" value="Guardar" onclick="Savestd()">
+			<input type="button" name="abort" id="abort" value="Cancelar" onclick="Clearinputs()" hidden>
+		</fieldset>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<fieldset>
+		<legend>Filter</legend>
+		<label for="filter-grade">Por Grado</label>
+		<select id="filter-grade" name="filter-grade" onclick="Liststd()"></select>
+		<label for="filter-sex">Por Sexo</label>
+		<select id="filter-sex" name="filter-sex" onclick="Liststd()">
+			<option selected></option>
+			<option>Masculino</option>
+			<option>Femenino</option>
+		</select>
+		<br>
+		<br>
+		<label for="filter-matter">Por Materia</label>
+		<select name="filter-matter" id="filter-matter" onclick="Liststd()"></select>
+		<label for="filter-matter-count">Por Nro de Materias</label>
+		<input type="text" name="filter-matter-count" id="filter-matter-count" onkeypress="return valideKey(event);" onclick="Liststd()">
+		<br>
+		<br>
+		<label for="filter-promedio">Por Promedio</label>
+		<select name="filter-promedio" id="filter-promedio" onclick="Liststd()">
+			<option selected></option>
+			<option>1/10</option>
+			<option>11/15</option>
+			<option>16/20</option>
+		</select>
+	</fieldset>
+	<table class="reg-section-1">
+		<thead>
+			<tr class="reg-title">
+				<td>Nombre</td>
+				<td>Apellido</td>
+				<td>Edad</td>
+				<td>Grado</td>
+				<td>Sexo</td>
+				<td>Nro. de materias</td>
+				<td>Promedio</td>
+				<td>Opciones</td>
+			</tr>
+		</thead>
+		<tbody class="reg-info"></tbody>
+	</table>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

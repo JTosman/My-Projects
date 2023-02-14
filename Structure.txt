@@ -1,0 +1,27 @@
+Elaborar un crud de estudiantes usando localStorage o IndexDB 
+donde contendran los siguientes datos:
+
+1-Nombre
+2-Apellido
+3-Fecha de nacimiento
+4-Grado (año escolar)
+5-Sexo
+6-Materias (pueden ser varias)
+  7-Nombre de la materia
+  8-Nota de la materia
+
+-Se requiere generar un listado donde se muestre la informacion
+de los estudiantes, se puede ver en la lista los siguientes datos:
+
+*Nombre
+*Apellido
+*Edad (No fecha de nacimiento)
+*Grado
+*Cantidad de materias
+*Promedio general del estudiante
+
+-El listado debe permitir aplicar diferentes filtros:
+
+1-Filtro por grado
+2-Filtro por materia
+3-Filtro por sexo
