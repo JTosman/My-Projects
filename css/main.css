@@ -1,0 +1,47 @@
+/* Global styles */
+
+/* Bootstrap styles */
+
+/* Custom styles */
+
+.main {
+	background-image: url(../img/img_1.jpeg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.main .login {
+	width: 20rem;
+	height: 2.5rem;
+	border: 1px solid white;
+	border-radius: 20px 20px 20px 20px;
+	background-color: rgba(0,0,0,0);
+}
+
+.main .login-button {
+	width: 13.5rem;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.main .login-radio {
+}
+
+.main .remenber {
+	margin-right: 180px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.remenber label {
+	font-size: 13px;
+}
+
+/* Media querys */
+
+@media screen and (max-width: 600px){
+
+	.main {
+		background-position: center;
+	}
+}
