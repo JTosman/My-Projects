@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/jquery-3.6.1.js"></script>
+</head>
+<body>
+	<div class="container mt-5 px-5 pb-5">
+		<section id="welcome">
+			<h1 class="text-center mb-5">Bienvenido a JTGroups</h1>
+			<h3 class="text-center">Por favor llena nuestros formulario para evaluar tu informacion</h3>
+		</section>
+		<div id="carouselExampleControls" class="carousel pb-2 d-flex flex-column align-items-center slide border border-dark" data-bs-ride="carousel">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<form class="row g-3 mt-5 p-5" id="form">							
+					<h3 class="text-center">Informacion Personal</h3>
+					  <div class="col-12 col-md-6 col-lg-6">
+						<label for="fullname" class="form-label">Nombre Completo</label>
+						<input type="text" class="form-control" id="fullname">
+						<div class="ms-1 validate-name"></div>
+					  </div>
+					  <div class="col-12 col-sm-7 col-md-6 col-lg-4">
+						<label for="birth-date" class="form-label">Fecha de Nacimiento</label>
+						<input type="date" class="form-control" id="birth">
+						<div class="ms-1 validate-birth"></div>
+					  </div>
+					  <div class="col-12 col-md-6 col-lg-6">
+						<label for="fullname" class="form-label">Cedula</label>
+						<input type="text" class="form-control" id="fullname">
+						<div class="ms-1 validate-ci"></div>
+					  </div>
+					  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="country" class="form-label">País</label>
+						<select id="country" class="form-select">
+							<option value="0">...</option>
+							<option value="1">Venezuela</option>
+						</select>
+						<div class="ms-1 validate-country"></div>
+					  </div>
+					  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="state" class="form-label">Estado</label>
+						<select id="state" class="form-select">
+							<option value="0">...</option>
+							<option value="1">Portuguesa</option>
+							<option value="2">Merida</option>
+							<option value="3">Barinas</option>
+							<option value="4">Zulia</option>
+						</select>
+						<div class="ms-1 validate-state"></div>
+					  </div>
+					  <div class="col-12 col-md-6 col-lg-6">
+						<label for="address" class="form-label">Direccion</label>
+						<input type="text" class="form-control" id="address">
+						<div class="ms-1 validate-addres"></div>
+					  </div>
+					  <div class="col-12 col-sm-8 col-md-7 col-lg-6">
+						<label for="email" class="form-label">Correo Electrónico</label>
+						<input type="email" class="form-control" id="email">
+						<div class="ms-1 validate-email"></div>
+					  </div>
+					  <div class="col-12 col-md-6 col-lg-6">
+						<label for="phone" class="form-label">Telefono</label>
+						<input type="phone" class="form-control" id="phone">
+						<div class="ms-1 validate-phone"></div>
+					  </div>
+					  <div class="col-12">
+					</div>
+				</form>
+			  </div>
+			  <div class="carousel-item">
+				<form class="row g-3 mt-5 p-5" id="form">							
+					<h3 class="text-center">Situacion Academica</h3>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="state" class="form-label">Educacion Secundaria</label>
+						<select id="state" class="form-select">
+							<option value="0">...</option>
+							<option value="1">En Curso</option>
+							<option value="2">Completada (Bachiller)</option>
+						</select>
+						<div class="ms-1 validate-SQ"></div>
+					  </div>
+					  <div class="col-12 col-sm-7 col-md-6 col-lg-4">
+						<label for="SQ" class="form-label">Institucion Secundaria</label>
+						<input type="text" class="form-control" id="SQ">
+						<div class="ms-1 validate-SQ"></div>
+					  </div>
+					  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="state" class="form-label">Cursas una carrera universitaria?</label>
+						<select id="Uni" class="form-select">
+							<option value="0">...</option>
+							<option value="1">Si</option>
+							<option value="2">No</option>
+						</select>
+						<div class="ms-1 validate-Uni"></div>
+					  </div>
+					  <div class="col-12 col-sm-7 col-md-6 col-lg-4">
+						<label for="Ins-uni" class="form-label">Institucion Universitaria</label>
+						<input type="text" class="form-control" id="Ins-uni">
+						<div class="ms-1 validate-Ins-uni"></div>
+					  </div>
+					  <div class="col-12 col-sm-7 col-md-6 col-lg-4">
+						<label for="Uni-title" class="form-label">Titulo</label>
+						<input type="text" class="form-control" id="Uni-title">
+						<div class="ms-1 validate-Uni-title"></div>
+					  </div>
+					  <div class="col-12">
+					</div>
+				</form>
+			  </div>
+			  <div class="carousel-item">
+				<form class="row g-3 mt-5 p-5" id="form">							
+					<h3 class="text-center">Experiencia laboral</h3>
+					  <div class="col-12 col-md-6 col-lg-6">
+						<label for="fullname" class="form-label">Ultimo puesto de trabajo</label>
+						<input type="text" class="form-control" id="fullname">
+						<div class="ms-1 validate-name"></div>
+					  </div>
+					  <div class="col-12 col-sm-7 col-md-6 col-lg-4">
+						<label for="birth-date" class="form-label">Fecha de Inicio</label>
+						<input type="date" class="form-control" id="birth">
+						<div class="ms-1 validate-birth"></div>
+					  </div>
+					  <div class="col-12 col-sm-7 col-md-6 col-lg-4">
+						<label for="birth-date" class="form-label">Fecha de Culminacion</label>
+						<input type="date" class="form-control" id="birth">
+						<div class="ms-1 validate-birth"></div>
+					  </div>
+					  <div class="col-12 col-md-6 col-lg-6">
+						<label for="fullname" class="form-label">Cuentanos tu experiencia laboral</label>
+						<textarea class="form-control" id="" cols="30" rows="1"></textarea>
+						<div class="ms-1 validate-name"></div>
+					  </div>
+					  <div class="col-12 col-md-6 col-lg-6">
+						<label for="fullname" class="form-label">Porque quieres ser parte de nuestro equipo?</label>
+						<textarea class="form-control" id="" cols="30" rows="1"></textarea>
+						<div class="ms-1 validate-name"></div>
+					  </div>
+					  <div class="col-12">
+						  <!-- Button trigger modal -->
+						 <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="" id="btn-submit">Enviar</button>
+					</div>
+				</form>
+			  </div>
+			</div>
+			<div class="row w-100 justify-content-center">
+				<div class="col-5">
+					<button class="btn btn-primary w-100" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+					  <span class="">Previous</span>
+					</button>
+				</div>
+				<div class="col-5">
+					<button class="btn btn-primary w-100" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					  <span class="">Next</span>
+					</button>
+				</div>
+			</div>
+		  </div>
+	</div>
+</body>
+<script type="text/javascript" src="./js/bootstrap/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/index.js"></script>
+</html>
